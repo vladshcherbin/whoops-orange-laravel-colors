@@ -1,0 +1,403 @@
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+body {
+	font: 14px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	color: #2B2B2B;
+	background-color: #D4D4D4;
+	padding: 0;
+	margin: 0;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #FE8A59;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+}
+
+.branding {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #777777;
+	font-size: 10px;
+	z-index: 100;
+}
+
+.branding a {
+	color: #CD3F3F;
+}
+
+header {
+	padding: 20px 20px;
+	color: #555555;
+	background: #DDDDDD;
+	box-sizing: border-box;
+	border-left: 5px solid #ED3D1A;
+}
+
+.exc-title {
+	margin: 0;
+	color: #616161;
+	font-weight: normal;
+}
+
+.exc-title-primary {
+	color: #ED591A;
+}
+
+.exc-message {
+	font-size: 16px;
+	margin: 5px 0;
+	word-wrap: break-word;
+}
+
+.stack-container {
+	height: 100%;
+	position: relative;
+}
+
+.details-container {
+	height: 100%;
+	overflow: auto;
+	float: right;
+	width: 70%;
+	background: #FFFFFF;
+}
+
+.details {
+	padding: 10px 20px;
+	border-left: 5px solid rgba(0, 0, 0, .2);
+}
+
+.frames-container {
+	height: 100%;
+	overflow: auto;
+	float: left;
+	width: 30%;
+	background: #FFFFFF;
+}
+
+.frame {
+	padding: 14px;
+	background: #F3F3F3;
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.frame.active {
+	background-color: #ED591A;
+	color: #F3F3F3;
+}
+
+.frame:not(.active):hover {
+	background: #F0E5DF;
+}
+
+.frame-class, .frame-function, .frame-index {
+	font-weight: bold;
+}
+
+.frame-index {
+	font-size: 11px;
+	color: #BDBDBD;
+}
+
+.frame-class {
+	color: #ED591A;
+}
+
+.active .frame-class {
+	color: #5E2204;
+}
+
+.frame-file {
+	font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+	color: #999999;
+	word-wrap: break-word;
+}
+
+.frame-file .editor-link {
+	color: white;
+}
+
+.frame-file .editor-link:hover strong {
+	color: #F0E5DF;
+}
+
+.frame-line {
+	font-weight: bold;
+	color: #A33202;
+}
+
+.active .frame-file {
+	color: #872D00;
+}
+
+.active .frame-line {
+	color: #FFFFFF;
+}
+
+.frame-line:before {
+	content: ":";
+}
+
+.frame-code {
+	padding: 20px;
+	background: #F0F0F0;
+	display: none;
+	border-left: 5px solid #EDA31A;
+}
+
+.frame-code.active {
+	display: block;
+}
+
+.frame-code .frame-file {
+	background: #ED591A;
+	color: #872D00;
+	padding: 10px 10px 10px 10px;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.code-block {
+	padding: 10px;
+	margin: 0;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.linenums {
+	margin: 0;
+	margin-left: 10px;
+}
+
+.frame-comments {
+	border-top: none;
+	padding: 5px;
+	font-size: 12px;
+	background: #404040;
+}
+
+.frame-comments.empty {
+	padding: 8px 15px;
+}
+
+.frame-comments.empty:before {
+	content: "No comments for this stack frame.";
+	color: #828282;
+}
+
+.frame-comment {
+	padding: 10px 5px;
+	color: #D2D2D2;
+}
+
+.frame-comment a {
+	color: #872D00;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.frame-comment a:hover {
+	color: #ED591A;
+}
+
+.frame-comment:not(:last-child) {
+	border-bottom: 1px dotted rgba(0, 0, 0, .3);
+}
+
+.frame-comment-context {
+	font-size: 10px;
+	font-weight: bold;
+	color: #86D2B6;
+}
+
+.data-table-container label {
+	font-size: 16px;
+	font-weight: bold;
+	color: #ED591A;
+	margin: 10px 0;
+	padding: 10px 0;
+
+	display: block;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted rgba(0, 0, 0, .08);
+}
+
+.data-table {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.data-table tbody {
+	font: 12px 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+.data-table thead {
+	display: none;
+}
+
+.data-table tr {
+	padding: 5px 0;
+}
+
+.data-table td:first-child {
+	width: 20%;
+	min-width: 130px;
+	overflow: hidden;
+	color: #463C54;
+	padding-right: 5px;
+
+}
+
+.data-table td:last-child {
+	width: 80%;
+	color: #999999;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+.data-table .empty {
+	color: rgba(0, 0, 0, .3);
+	font-style: italic;
+}
+
+.handler {
+	padding: 10px;
+	font: 14px monospace;
+}
+
+.handler.active {
+	color: #BBBBBB;
+	background: #989898;
+	font-weight: bold;
+}
+
+/* prettify code style
+Uses the Doxy theme as a base */
+pre .str, code .str {
+	color: #E3B446;
+}
+
+/* string  */
+pre .kwd, code .kwd {
+	color: #DB613B;
+	font-weight: bold;
+}
+
+/* keyword*/
+pre .com, code .com {
+	color: #555555;
+	font-weight: bold;
+}
+
+/* comment */
+pre .typ, code .typ {
+	color: #FFFFFF;
+}
+
+/* type  */
+pre .lit, code .lit {
+	color: #17CFB6;
+}
+
+/* literal */
+pre .pun, code .pun {
+	color: #93A1A1;
+	font-weight: bold;
+}
+
+/* punctuation  */
+pre .pln, code .pln {
+	color: #CCCCCC;
+}
+
+/* plaintext  */
+pre .tag, code .tag {
+	color: #DB613B;
+}
+
+/* html/xml tag  */
+pre .htm, code .htm {
+	color: #DDA0DD;
+}
+
+/* html tag */
+pre .xsl, code .xsl {
+	color: #D0A0D0;
+}
+
+/* xslt tag */
+pre .atn, code .atn {
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+/* html/xml attribute name */
+pre .atv, code .atv {
+	color: #E3B446;
+}
+
+/* html/xml attribute value  */
+pre .dec, code .dec {
+	color: #FFFFFF;
+}
+
+/* decimal  */
+pre.prettyprint, code.prettyprint {
+	font-weight: normal;
+	font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+	background: #272727;
+	color: #929292;
+	font-size: 11px;
+	line-height: 1.5em;
+}
+
+pre.prettyprint {
+	white-space: pre-wrap;
+}
+
+pre.prettyprint a, code.prettyprint a {
+	text-decoration: none;
+}
+
+.linenums li {
+	color: #A5A5A5;
+}
+
+.linenums li.current {
+	background: rgba(255, 255, 255, .05);
+	padding-top: 4px;
+	padding-left: 1px;
+}
+
+.linenums li.current.active {
+	background: rgba(255, 255, 255, .1);
+}
