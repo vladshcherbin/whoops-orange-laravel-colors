@@ -1,21 +1,20 @@
 whoops-orange-laravel-colors
 ============================
 
-Laravel uses Whoops package (https://github.com/filp/whoops) for various error messages.
-For a long time, Laravel used a custom color-scheme by Dayle Rees(https://twitter.com/daylerees) for Whoops 
+Laravel uses [Whoops package](https://github.com/filp/whoops "Whoops package") for various error messages. For a long time, the package was used with a custom color-scheme by [Dayle Rees](https://twitter.com/daylerees "Dayle Rees").  
 Newer versions of Laravel (from 4.2) use the latest Whoops version and default color-scheme, the grey and blue one,
-to avoid stylesheet errors with updates of Whoops.
+to avoid various errors with the next updates of Whoops.
 
 For everyone, who liked the orange theme (the colors, fonts, font-sizes, etc.) - here it is.
 
 ## Installation
-Simply copy the version of css file according to your whoops version into folder in laravel:
+Simply copy the css file to that vendor folder in your laravel directory, according to your whoops version:
 ~~~
 vendor/filp/whoops/src/Whoops/Resources/css/
 ~~~
 
 ### The difference
 #### Default
-![alt text](https://photos-2.dropbox.com/t/0/AABQzjDjZp7VWRPMxgqauheF4GfGP6wYmsufDZBWJOQbHg/12/22674602/png/1024x768/3/1402585200/0/2/was.png/mEJqaq_NwY8IHY6N9ZCXNJZmyCtJ22zXCajBaipYMJk "Default")
+![alt text](https://photos-5.dropbox.com/t/0/AADb0l5WZulGFAk9Nu17C8SjG9UcNnDmL5-gGEVsQ4wgLQ/12/22674602/jpeg/1024x768/3/1402592400/0/2/was-frame.jpg/Ts3GM8tNcX41kd6S-XrAmv4n6bvb7gCfaa9MdglXTzk "Default")
 #### Old (orange)
-![alt text](https://photos-1.dropbox.com/t/0/AAAfGI6cTTjYBGnjEdc1Lz1k8uVBxmsY7n6d6olon_mX4w/12/22674602/png/1024x768/3/1402585200/0/2/now.png/gbxOgOxzseqWSiGSHspuqydjMWv1hreOVMs_L3RXuBA "Orange")
+![alt text](https://photos-1.dropbox.com/t/0/AADGQh-1MqlKnbEjRb0cn-2xxTLQ10zmnDnufbI5AtGW8g/12/22674602/jpeg/1024x768/3/1402592400/0/2/now-frame.jpg/sjLW3pKgAwl6vQhgTXb0nD29lTahCKt0W5RSDN-NxU8 "Orange")
