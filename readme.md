@@ -15,6 +15,6 @@ vendor/filp/whoops/src/Whoops/Resources/css/
 
 ### The difference
 #### Default
-![alt text](https://photos-5.dropbox.com/t/0/AADb0l5WZulGFAk9Nu17C8SjG9UcNnDmL5-gGEVsQ4wgLQ/12/22674602/jpeg/1024x768/3/1402592400/0/2/was-frame.jpg/Ts3GM8tNcX41kd6S-XrAmv4n6bvb7gCfaa9MdglXTzk "Default")
+![alt text](http://webdrop.ru/img/shared/was-frame.jpg "Default")
 #### Old (orange)
-![alt text](https://photos-1.dropbox.com/t/0/AADGQh-1MqlKnbEjRb0cn-2xxTLQ10zmnDnufbI5AtGW8g/12/22674602/jpeg/1024x768/3/1402592400/0/2/now-frame.jpg/sjLW3pKgAwl6vQhgTXb0nD29lTahCKt0W5RSDN-NxU8 "Orange")
+![alt text](http://webdrop.ru/img/shared/now-frame.jpg "Orange")
