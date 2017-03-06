@@ -15,6 +15,6 @@ vendor/filp/whoops/src/Whoops/Resources/css/
 
 ### The difference
 #### Default
-![alt text](http://webdrop.ru/img/shared/was-frame.jpg "Default")
+![alt text](photos/was-frame.jpg "Default")
 #### Old (orange)
-![alt text](http://webdrop.ru/img/shared/now-frame.jpg "Orange")
+![alt text](photos/now-frame.jpg "Orange")
